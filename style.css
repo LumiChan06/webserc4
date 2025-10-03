@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    text-align: center;
+    color: #ffffffcb;
+}
+#main {
+    background:linear-gradient(115deg, lch(0% 0 0), hwb(0 69% 27%), lab(25.51% 0.86 0.3),lab(0% 0 0) ); 
+    height: 40vh;
+    width: 80%;
+    margin: auto;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    
+}
+.border-btn {
+    background:linear-gradient(115deg, hwb(0 0% 100%), hwb(0 100% 0%), lab(100% 0.01 -0.01),hsl(0, 0%, 0%) ); 
+    padding: 2px;
+}
+
+.btn{
+    background-color: oklch(25.631% 0.04199 216.092 / 0.486);
+    color: hwb(193 14% 74%);
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: larger;
+    letter-spacing: .1em;
+}
+
+.border-btn:hover{ 
+    background:linear-gradient(115deg, lab(100% 0.01 -0.01), hwb(0 0% 100%), lab(0% 0 0),hwb(0 100% 0%) ); 
+   
+}
+
+.btn:hover {
+    background-color: oklab(0% 0 0 / 0.7);
+    padding: 1.1em 1.6em;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) all 0.3s;
+}

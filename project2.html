@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search bar</title>
+</head>
+<body>
+    <div class="main2">
+   <form id="searchForm">
+    <input id="searchInput" type="search" placeholder="Type something..."  />
+    <button type="submit">Search</button>
+  </form>
+  <h1>Write something</h1>
+    </div>
+  <script>
+    document.getElementById('searchForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+      if (q === 'yeahh' || q === 'suprise me') {
+        // relative path to the page you want to open
+        window.location.href = 'heyyy.html';
+      } else {
+        // fallback behavior (optional)
+        alert('No match — try typing "suprise me" exactly.');
+      }
+    });
+  </script>
+    
+</body>
+</html>
